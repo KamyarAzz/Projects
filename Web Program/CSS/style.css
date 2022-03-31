@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Marker";
+  src: url(Fonts/iranmarker/IRANMarker.ttf);
+}
+
+body {
+  direction: rtl;
+  background-color: #1b3e44;
+}
+
+.container {
+  font-family: "Marker";
+  position: relative;
+  right: calc(50vw - 325px);
+  background: radial-gradient(hsl(100 100% 60%), hsl(200 100% 60%)) fixed;
+  background: conic-gradient(
+      hsl(100 100% 60%),
+      hsl(200 100% 60%),
+      hsl(100 100% 60%)
+    )
+    fixed;
+  width: 650px;
+  height: 110px;
+  border: 2px solid green;
+  border-radius: 56px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.job {
+  margin-right: 15px;
+  font-size: large;
+}
+
+.jobTitle{
+  margin-right: 30px;
+}
+
+.jobInfo {
+  font-size: medium;
+  position: absolute;
+  left: 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+img {
+  margin-top: 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 30%;
+  display: inline-block;
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: blueviolet;
+  padding-left: calc(50vw - 202px);
+}
+
+.main {
+  width: 400px;
+  height: 300px;
+  border: 2px solid purple;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.cheeseburger {
+  background-image: url(../Data/Images/cheeseburger.png);
+}
+
+.pizza {
+  background-image: url(../Data/Images/pizza.png);
+}
+
+.hotdog {
+  background-image: url(../Data/Images/hotdog.png);
+}
+
+.icecream {
+  background-image: url(../Data/Images/ice-cream.png);
+}
+
+.milkshake {
+  background-image: url(../Data/Images/milkshake.png);
+}
+
+.fries {
+  background-image: url(../Data/Images/fries.png);
+}
+
+.back {
+  cursor: pointer;
+  background-image: url(../Data/Images/blank.png);
+}
+
+.results {
+  position: relative;
+  left: 140px;
+  display: inline-block;
+}
+
+.results p {
+  font-size: 28px;
+  color: aliceblue;
+}
+
+.results button {
+  position: relative;
+  left: 8px;
+  color: aliceblue;
+  background-color: crimson;
+  border: 2px solid rgb(180, 10, 10);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.enabled {
+  display: block;
+}
+
+.disabled {
+  display: none;
+}
+
+img {
+  /* display: none; */
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.resultText {
+  border-bottom: 2px solid #99eeb4;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  position: relative;
+  left: 5px;
+}
