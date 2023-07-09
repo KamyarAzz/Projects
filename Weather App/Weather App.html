@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+      <img src="Data/giphy.gif" alt="birds" id="birds">
+      <div class="weather-app">
+      <header>
+          <input type="text" name="city" id="search-box" placeholder="Choose a city..." autocomplete="off" class="search-box">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+            </section>
+            <section class="weather-info">
+                <div class="temp"> </div>
+                <div class="weather"></div>
+                <div class="high-low"></div>
+            </section>
+        </main>
+    </div>
+    <div>
+        <img src="Data/birds2.gif" alt="bird" id="bird">
+    </div>
+    <script src="./JS/handlebars.js"></script>
+    <script src="./JS/app.js"></script>
+</html>

@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  box-sizing: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../Data/thumb-1920-679478.jpg);
+  overflow: hidden;
+}
+
+header {
+  padding: 30px 15px;
+}
+
+#search-box {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 3px solid orange;
+  width: 210px;
+  height: 35px;
+  text-align: center;
+}
+
+.weather-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+main.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#bird {
+  display: inline-block;
+  animation-name: bird;
+  animation-duration: 10.5s;
+  position: absolute;
+  left: -200px;
+  bottom: 150px;
+  animation-iteration-count: infinite;
+}
+#birds {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+}
+
+@keyframes bird {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
