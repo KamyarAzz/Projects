@@ -1,0 +1,55 @@
+body {
+  background-image: radial-gradient(circle,#faae7b,#432371);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.score {
+  font-size: 40px;
+  margin: 15px 100px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 3px solid black;
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr td:first-child {
+  border-left: none;
+}
+
+tr td:last-child {
+  border-right: none;
+}
+
+#btn {
+  background-color: gold;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 17vh;
+  cursor: pointer;
+}
