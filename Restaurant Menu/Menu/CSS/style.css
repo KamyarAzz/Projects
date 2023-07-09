@@ -1,0 +1,147 @@
+:root{
+    --main:#102A42;
+    --side:#FFA500;
+    --dark-side:#81653b;
+    --bg-gray:#F1F5F8;
+    --light-blue:#617D98;
+}
+/* --side:#C59D5F; */
+*,
+::after,
+::before {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    background-image: url("../Images/4kamy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:var(--bg-gray);
+    font-family: monospace;
+}
+
+#title{
+    padding-top: 4.5rem;
+}
+
+h1{
+    margin: 0 auto;
+    font-size: 3rem;
+    color:var(--main);
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+div.underline{
+    height: 4px;
+    width:80px;
+    background-color: var(--side);
+    margin: 5px auto;
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.slider{
+    margin-top: 5.5px;
+}
+
+.slider a{
+    text-decoration: none;
+    color:var(--main);
+    font-size: 1rem;
+}
+
+.slider:hover a{
+    color:var(--side); 
+    transition-duration: 0.45s; 
+}
+
+#left-slider{
+    position: relative;
+    left: -4%;
+}
+
+#right-slider{
+    position: relative;
+    right: -4%;
+}
+
+button{
+    background-color: var(--bg-gray);
+    font-size: 1rem;
+    border: 2px solid var(--side);
+    border-right-color: #81653b;;
+    border-bottom-color: #81653b;;
+    border-radius: 8px;
+    padding: 0.40rem 0.70rem;
+    letter-spacing: 0.1rem;
+    color: var(--side);
+    margin: -0.1rem 0.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--side);
+    color: #fff;
+    transition-duration: 0.45s;
+}
+
+img:not(.logo){
+    height: 145px;
+    width: 220px;
+    object-fit: cover;
+    border: 4.5px solid var(--side);
+    border-radius: 5px;
+}
+
+#menu-container{
+    display:grid;
+    width: 95vw;
+    margin: 4rem auto;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3rem 2rem;
+    justify-items: center;
+    max-width: 1170px;
+}
+
+h4{
+    display: inline-block;
+    letter-spacing: 0.10rem;
+}
+
+h4:not(.price){
+    font-size: 1.1rem;
+    color: var(--main);
+    word-spacing: -0.2rem;
+}
+
+h4.price{
+    color: var(--side);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted var(--light-blue);
+    padding: 5px;
+}
+
+.item-info{
+    display: inline-block;
+    width: 340px;
+    padding: 1rem;
+    transform: translateY(-26px);
+}
+
+.item-text{
+    color: var(--light-blue);
+    margin-top: 20px;
+    font-size: 1.1rem;
+}

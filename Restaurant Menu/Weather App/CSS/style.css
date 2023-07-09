@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  box-sizing: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url("../Data/autumn-leaves-scarf.jpg");
+  overflow: hidden;
+  background-position: 90% 90%;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 30px 15px;
+}
+
+#search-box {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 3px solid orange;
+  width: 210px;
+  height: 35px;
+  text-align: center;
+}
+
+.weather-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+main.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#bird {
+  display: inline-block;
+  animation-name: bird;
+  animation-duration: 10.5s;
+  position: absolute;
+  left: -200px;
+  bottom: 40px;
+  animation-iteration-count: infinite;
+}
+
+#slider{
+  display: inline-block;
+  position: absolute;
+  left: 4rem;
+  top: 2.5rem;
+}
+
+#slider a{
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: #102A42;
+  font-weight: bold;
+}
+
+#slider:hover a{
+  color: #FFA500;
+  transition-duration:0.45s;
+}
+
+
+@keyframes bird {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}

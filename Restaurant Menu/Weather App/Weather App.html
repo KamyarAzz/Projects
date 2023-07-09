@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kamyar Azizi">
+    <meta name="keywords" content="menu,food,dinner,lunch,breakfast,shakes,weather">
+    <meta name="describtion" content="with out weather app feature you can check the weather at any time  and any place before you make a reservation!">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+        <header>
+            <div id="slider"><a href="../Menu/index.html">< Menu</a></div>
+            <input type="text" name="city" id="search-box" placeholder="Choose a city..." autocomplete="off" class="search-box">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+            </section>
+            <section class="weather-info">
+                <div class="temp"> </div>
+                <div class="weather"></div>
+                <div class="high-low"></div>
+            </section>
+        </main>
+    </div>
+    <div>
+        <img src="Data/birds2.gif" alt="bird" id="bird">
+    </div>
+    <script src="./JavaScript/handlebars.js"></script>
+    <script src="./JavaScript/app.js"></script>
+</html>

@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    box-sizing: 0px;
+    margin: 0px;
+}
+
+#slider{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #FFA500;
+    transition-duration: 0.45s;
+}
+
+#background{
+    position: absolute;
+    background-color: #102A42;
+    width: 100%;
+    height: 100%;
+}
+
+#red{
+    background-color: #102A42;
+    width: 90px;
+    height: 90px;
+    border-radius:50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 5px solid white ;
+    border-left-color: orange;
+    animation: rotate 1.2s linear 0s infinite;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(0deg)}
+    to{ transform: rotate(360deg)}
+}
+
+.hidden{
+    display: none;
+}
+
+
+#main{
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Images/top-view-sliced-fresh-vegetables-cucumbers-tomatoes-along-with-seasonings-dark-background-food-meal-vegetable-salad.jpg");
+}
+
+#output{
+    margin-top: 2%;
+}
+
+.person{
+    margin: 5px auto;
+    background-color: #102A42;
+    border: 2px solid #FFA500;
+    border-radius:5px;
+    width: 750px;
+    height:80px;
+}
+
+#bottom{
+    width: 200px;
+    margin-left: calc(50% - 100px);
+}
+
+button{
+    border-radius: 1px;
+    width: 70px;
+    height: 28px;
+    border: 2px solid #102A42;
+    color: white;
+    background-color:#FFA500 ;
+    border-radius:2px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+p{
+    display: inline-block;
+    position: relative;
+    bottom:30px;
+    margin-left: 20px;
+    font-size:20px;
+    color: white;
+}
+
+#page{
+    color: white;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.inactive{
+    cursor: default;
+}
